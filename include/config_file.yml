@@ -1,0 +1,18 @@
+dag_factory_query:
+  default_args:
+    owner: 'example_owner'
+    start_date: 2020-12-02
+    retries: 1
+    retry_delay_sec: 300
+  schedule_interval: '0 3 * * *'
+  concurrency: 1
+  max_active_runs: 1
+  dagrun_timeout_sec: 60
+  default_view: 'tree'  # or 'graph', 'duration', 'gantt', 'landing_times'
+  orientation: 'LR'  # or 'TB', 'RL', 'BT'
+  template_searchpath: '/usr/local/airflow/include'
+  tasks:
+    task_1:
+      operator: airflow.contrib.operators.snowflake_operator.SnowflakeOperator
+      snowflake_conn_id: 'snowflake'
+      sql: 'SELECT * FROM STATE_DATA'

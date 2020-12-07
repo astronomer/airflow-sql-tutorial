@@ -1,0 +1,6 @@
+kubernetes
+hvac
+snowflake-connector-python==2.2.7
+snowflake-sqlalchemy==1.2.3
+requests==2.23.0
+dag-factory==0.4.5
