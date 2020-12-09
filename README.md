@@ -1,5 +1,5 @@
 # airflow-sql-tutorial
-This repo contains an Astronomer project with multiple example DAGs showing how to use Airflow for SQL use cases. A guide discussing the DAGs and concepts in depth will be published soon.
+This repo contains an Astronomer project with multiple example DAGs showing how to use Airflow for SQL use cases. A guide discussing the DAGs and concepts in depth can be found [here](https://www.astronomer.io/guides/airflow-sql-tutorial).
 
 ## Tutorial Overview
 This tutorial has five DAGs showing how to accomplish the following SQL use cases:
